@@ -1,26 +1,65 @@
-/* style.css */
-
+/* Mengatur gaya dasar untuk body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-image: url('./images/BG.jpg');
+    background-size: cover;
+    color: black;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
-.profile-container {
-    display: flex;
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+        padding: 10px;
+        border-radius: 8px;
+        color: #000000; /* Green text color */
+        background-color: #f6f66a; /* White background */
+        display: inline-block;
+        text-align: center;
+}
+
+.main-container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 800px;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tambahan gaya lain seperti pada kode sebelumnya */
+
+
+/* Kontainer utama profil */
+.main-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Bagian kiri profil */
 .profile-left {
     background-color: #33b353;
     color: white;
@@ -33,7 +72,8 @@ body {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .profile-left h2 {
@@ -60,9 +100,10 @@ body {
     margin: 5px 0;
 }
 
+/* Bagian kanan profil */
 .profile-right {
     padding: 20px;
-    width: 65%;
+    width: 60%;
     color: #333;
 }
 
@@ -83,3 +124,26 @@ body {
     margin: 8px 0;
 }
 
+/* Gaya tombol "Back to Main Page" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #f6f66a;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Menempatkan tombol di bagian bawah dan mengatur tata letak */
+.back-button-container {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}

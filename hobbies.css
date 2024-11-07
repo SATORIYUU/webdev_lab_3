@@ -1,0 +1,116 @@
+/* Basic styling for body */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/BGhobbies.jpg');
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Back button styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #fff700;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #388E3C;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+header h1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Hobby card styling */
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+    min-height: 450px; /* Pastikan tinggi minimal yang cukup */
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk efek hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efek zoom-in dan shadow saat hover */
+.hobby-card:hover {
+    transform: scale(1.05); /* Perbesar sedikit */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tambahkan shadow */
+}
+
+/* Styling untuk ikon di atas judul */
+.hobby-icon {
+    width: 50px; /* Sesuaikan ukuran ikon */
+    height: 50px;
+    margin-bottom: 10px; /* Beri jarak antara ikon dan judul */
+}
+
+
+.hobby-card h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.hobby-card p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Playlist button with hover effect */
+.playlist-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #76ff03;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

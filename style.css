@@ -1,17 +1,41 @@
-/* style.css */
-
 /* Mengatur tampilan dasar halaman */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+    background-image: url('images/BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
 }
 
-/* Kontainer untuk konten utama */
-.container {
+
+.container, p, .button {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    margin-top: 100px;
+}
+
+h1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.5em;
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff; /* Green text color */
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff; /* Green text color */
+    text-align: center;
 }
 
 /* Gaya tombol */
@@ -30,28 +54,44 @@ body {
     background-color: #45a049;
 }
 
-/* Gaya tabel biodata */
-table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 20px auto;
+/* Gaya untuk kotak kategori */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-h1, h2 {
+.category-box {
+    width: 300px;
+    height: 250px;
+    background-color: #45a049;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, background-color 0.3s;
     text-align: center;
 }
 
-td img {
-    width: 150px;
+.category-box img {
+    width: 80px;
     height: auto;
+    margin-bottom: 15px;
+}
+
+.category-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hover effect for color change and scaling */
+.category-box:hover {
+    transform: scale(1.1); /* Zoom effect */
+    background-color: #f6f66a; /* Change to a slightly darker green */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
