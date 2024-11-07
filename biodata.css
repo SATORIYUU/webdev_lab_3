@@ -1,0 +1,85 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-left {
+    background-color: #33b353;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.profile-left img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-left h2 {
+    margin: 10px 0;
+}
+
+.profile-left p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.profile-left h3 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.profile-left ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.profile-left ul li {
+    margin: 5px 0;
+}
+
+.profile-right {
+    padding: 20px;
+    width: 65%;
+    color: #333;
+}
+
+.profile-right h3 {
+    margin-top: 0;
+    font-weight: bold;
+    border-bottom: 2px solid #3a9d49;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.profile-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-right ul li {
+    margin: 8px 0;
+}
+
