@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a5f271;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/bgcampuslife.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.5em;
+    margin: 0 auto; 
+    padding: 10px;
+    border-radius: 8px;
+    color: #000000; 
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ffffff;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #ffeb3b;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #ffffff;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #333;
+    font-size: 1em;
+}
