@@ -1,4 +1,4 @@
-/* Mengatur gaya dasar untuk body */
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('./images/BG.jpg');
@@ -18,8 +18,8 @@ h1 {
     margin: 20px 0;
         padding: 10px;
         border-radius: 8px;
-        color: #000000; /* Green text color */
-        background-color: #f6f66a; /* White background */
+        color: #000000; 
+        background-color: #f6f66a; 
         display: inline-block;
         text-align: center;
 }
@@ -39,10 +39,10 @@ h1 {
     justify-content: space-between;
 }
 
-/* Tambahan gaya lain seperti pada kode sebelumnya */
 
 
-/* Kontainer utama profil */
+
+
 .main-container {
     width: 80%;
     max-width: 800px;
@@ -59,7 +59,7 @@ h1 {
     justify-content: space-between;
 }
 
-/* Bagian kiri profil */
+
 .profile-left {
     background-color: #33b353;
     color: white;
@@ -100,7 +100,7 @@ h1 {
     margin: 5px 0;
 }
 
-/* Bagian kanan profil */
+
 .profile-right {
     padding: 20px;
     width: 60%;
@@ -124,7 +124,7 @@ h1 {
     margin: 8px 0;
 }
 
-/* Gaya tombol "Back to Main Page" */
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -141,7 +141,7 @@ h1 {
     background-color: #45a049;
 }
 
-/* Menempatkan tombol di bagian bawah dan mengatur tata letak */
+
 .back-button-container {
     text-align: center;
     margin-top: 50px;
